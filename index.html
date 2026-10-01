@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nile for Mac</title>
+<meta name="description" content="Nile puts your products in front of every AI shopping agent. Install on your Mac in one step.">
+<link rel="icon" href="icon.png">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--mint:#00ffc3;--mint-tint:#eafff8;--mint-text:#0a7a5c;--ink:#0b0b0c;--paper:#fff;--cloud:#ebf4f4;--cloud-2:#ddeceb;--line:#dbe9e8;--muted:#6a6a68;--disp:'General Sans',system-ui,sans-serif;--body:'DM Sans',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,monospace}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--cloud);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--disp);letter-spacing:-.03em;margin:0;line-height:1.08}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.mark{height:30px;width:auto;display:block;color:var(--ink)}
+.lang{display:inline-flex;background:var(--paper);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;border-radius:999px;padding:7px 14px;font:600 13px var(--body);color:var(--muted);cursor:pointer}.lang button.on{background:var(--ink);color:#fff}
+.hero{padding:70px 0 54px;text-align:center}
+.hero .k{font:600 12px var(--disp);letter-spacing:.08em;text-transform:uppercase;color:var(--mint-text)}
+.hero h1{font-size:clamp(40px,6.4vw,74px);margin:14px auto 18px;max-width:14em}
+.hero p{font-size:18px;color:var(--muted);max-width:40em;margin:0 auto 34px}
+.cta{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:#fff;text-decoration:none;border-radius:999px;padding:18px 28px;font:600 17px var(--disp);letter-spacing:-.01em;transition:transform .12s}
+.cta:hover{transform:translateY(-1px)}.cta svg{width:18px;height:18px}
+.sub{font-size:13px;color:var(--muted);margin-top:14px}
+.ring{width:150px;height:150px;margin:0 auto 26px;position:relative}
+.ring svg{width:100%;height:100%}.ring .seg{transition:stroke-dashoffset 1.1s cubic-bezier(.22,1,.36,1)}
+.ring b{position:absolute;inset:0;display:grid;place-items:center;font:600 30px var(--disp);letter-spacing:-.04em}
+.cmd{display:flex;align-items:center;gap:10px;background:var(--paper);border-radius:16px;padding:10px 10px 10px 18px;max-width:640px;margin:34px auto 0;text-align:left;font:14px var(--mono);color:var(--ink)}
+.cmd code{flex:1;overflow:auto;white-space:nowrap}.cmd button{border:0;background:var(--cloud);border-radius:999px;padding:9px 14px;font:600 13px var(--body);cursor:pointer}
+section{padding:40px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--paper);border-radius:20px;padding:24px}
+.card .n{width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:600 14px var(--disp);margin-bottom:16px}
+.card.mint{background:var(--mint)}.card.mint .n{background:var(--ink)}
+.card h3{font-size:19px;margin-bottom:8px}.card p{margin:0;color:var(--muted);font-size:14.5px}.card.mint p{color:rgba(11,11,12,.72)}
+h2{font-size:30px;margin-bottom:22px}
+.fee{display:grid;grid-template-columns:1fr auto;gap:0 20px;background:var(--paper);border-radius:20px;padding:6px 24px}
+.fee>div{padding:16px 0;border-bottom:1px solid var(--line)}.fee>div:nth-last-child(-n+2){border:0}
+.fee b{font:600 16px var(--disp)}.fee .v{text-align:right;color:var(--muted);font-size:14.5px;max-width:30em}
+.faq .card{margin-bottom:12px}.faq h3{font-size:16px}
+footer{padding:40px 0 60px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.fee{grid-template-columns:1fr}.fee .v{text-align:left}.fee>div{border:0;padding:6px 0}.fee>div:nth-child(odd){padding-top:16px}.hero{padding:44px 0 40px}}
+[data-l]{display:none}html[lang=en] [data-l=en],html[lang=zh] [data-l=zh]{display:revert}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><svg class="mark" viewBox="0 0 2691 1253" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NILE"><path d="M1428.03 0H1754.1V1252.81H1583.98C1497.9 1252.81 1428.03 1182.95 1428.03 1096.87V0Z"/><path d="M1195.29 365.895C1296.33 365.895 1378.25 283.987 1378.25 182.947C1378.25 81.9084 1296.33 0 1195.29 0C1094.24 0 1012.32 81.9084 1012.32 182.947C1012.32 283.987 1094.24 365.895 1195.29 365.895Z"/><path d="M476.655 654.881C437.978 654.881 406.85 664.3 383.457 683.012C360.002 701.787 342.972 726.426 332.429 756.865C321.887 787.367 316.585 821.361 316.585 858.849V1096.87C316.585 1183.01 246.78 1252.81 160.632 1252.81H0V820.176C0 733.412 16.9677 654.257 51.0278 582.775C85.0256 511.293 137.239 454.094 207.542 411.305C277.908 368.515 367.612 347.12 476.655 347.12C585.697 347.12 675.401 368.515 745.767 411.305C816.133 454.094 868.284 511.293 902.282 582.775C936.279 654.32 953.31 733.474 953.31 820.176V1252.81H792.678C706.529 1252.81 636.725 1183.01 636.725 1096.87V858.849C636.725 821.361 631.422 787.367 620.88 756.865C610.338 726.363 593.308 701.787 569.852 683.012C546.397 664.3 515.331 654.881 476.655 654.881Z"/><path d="M2282.09 1253C2191.58 1253 2110.42 1234.04 2038.62 1196.18C1966.75 1158.31 1910.24 1105.17 1868.94 1036.68C1827.64 968.256 1807 887.667 1807 794.914C1807 713.514 1825.9 638.85 1863.83 570.986C1901.69 503.121 1954.59 448.855 2022.46 408.123C2090.33 367.392 2168.93 347.058 2258.32 347.058C2347.72 347.058 2429.68 367.392 2494.19 408.123C2558.69 448.855 2607.6 502.248 2640.97 568.428C2674.34 634.609 2691 705.592 2691 781.316V857.664H2053.09L2095.51 803.397C2095.51 841.883 2103.12 875.503 2118.4 904.321C2133.69 933.138 2154.9 955.219 2182.03 970.501C2209.17 985.783 2241.42 993.393 2278.72 993.393C2319.46 993.393 2355.33 983.226 2386.45 962.829C2417.52 942.495 2440.48 915.923 2455.2 883.113L2689.32 1000.19C2653.07 1079.35 2599.92 1141.29 2529.81 1185.95C2459.69 1230.61 2377.1 1252.94 2282.09 1252.94V1253ZM2114.1 699.916H2387.27C2382.71 684.073 2374.54 669.103 2362.69 654.943C2350.84 640.846 2335.8 629.494 2317.71 621.011C2299.62 612.528 2278.66 608.286 2254.96 608.286C2231.25 608.286 2209.73 612.528 2190.45 621.011C2171.24 629.494 2155.39 640.535 2142.92 654.07C2130.44 667.668 2120.84 682.888 2114.1 699.854V699.916Z"/><path d="M1032.28 431.639H1358.35V1096.87C1358.35 1182.95 1288.48 1252.81 1202.4 1252.81H1032.28V431.639Z"/></svg><span class="lang"><button class="on" data-set="en">English</button><button data-set="zh">中文</button></span></header>
+
+<div class="hero">
+  <div class="ring" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="84" fill="none" stroke="var(--cloud-2)" stroke-width="20"/><circle class="seg" cx="100" cy="100" r="84" fill="none" stroke="var(--mint)" stroke-width="20" stroke-linecap="round" stroke-dasharray="110 528" style="stroke-dashoffset:110px" transform="rotate(-84 100 100)"/><circle class="seg" cx="100" cy="100" r="84" fill="none" stroke="var(--ink)" stroke-width="20" stroke-linecap="round" stroke-dasharray="210 528" style="stroke-dashoffset:210px;transition-delay:.15s" transform="rotate(8 100 100)"/><circle class="seg" cx="100" cy="100" r="84" fill="none" stroke="rgba(11,11,12,.55)" stroke-width="20" stroke-linecap="round" stroke-dasharray="62 528" style="stroke-dashoffset:62px;transition-delay:.3s" transform="rotate(170 100 100)"/><circle class="seg" cx="100" cy="100" r="84" fill="none" stroke="rgba(11,11,12,.3)" stroke-width="20" stroke-linecap="round" stroke-dasharray="40 528" style="stroke-dashoffset:40px;transition-delay:.45s" transform="rotate(224 100 100)"/></svg><b id="pct">0%</b></div>
+  <div class="k" data-l="en">Nile for Mac</div><div class="k" data-l="zh">Nile Mac 版</div>
+  <h1 data-l="en">Your products, sold by every AI shopping agent.</h1><h1 data-l="zh">让每一个 AI 购物 agent 都能卖你的商品。</h1>
+  <p data-l="en">Nile turns your catalog into listings that ChatGPT, Gemini, Perplexity and the private agents can read, match and buy from. The AI already on your Mac does the work; you confirm.</p>
+  <p data-l="zh">Nile 把你的商品目录变成 ChatGPT、Gemini、Perplexity 和各类私人 agent 能读懂、能匹配、能下单的 listing。活由你 Mac 上已有的 AI 来干，你只负责确认。</p>
+  <a class="cta" id="dl" href="https://github.com/Haozhuang479/get-nile/releases/latest/download/Nile-mac-arm64.dmg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></svg><span data-l="en">Download for Mac</span><span data-l="zh">下载 Mac 版</span></a>
+  <div class="sub" data-l="en">Apple Silicon · macOS 13 or later · v0.3.0 · free to install, pay only when Nile sells</div>
+  <div class="sub" data-l="zh">Apple Silicon · macOS 13 及以上 · v0.3.0 · 安装免费，Nile 卖出去才收费</div>
+  <div class="cmd"><code id="one">curl -fsSL https://haozhuang479.github.io/get-nile/install.sh | bash</code><button id="copy" data-l="en">Copy</button><button id="copy2" data-l="zh">复制</button></div>
+  <div class="sub" data-l="en">Or paste this in Terminal: it installs Nile and connects it to Codex or Claude Code if you already have one.</div>
+  <div class="sub" data-l="zh">或把这一行贴进终端：自动安装 Nile，并连上你已有的 Codex 或 Claude Code。</div>
+</div>
+
+<section>
+  <h2 data-l="en">Three steps, about ten minutes</h2><h2 data-l="zh">三步，大约十分钟</h2>
+  <div class="grid">
+    <div class="card mint"><div class="n">1</div><h3 data-l="en">Connect your agent</h3><h3 data-l="zh">连接你的 agent</h3><p data-l="en">Codex or Claude Code if you have one. If not, pick Gemini, DeepSeek or a local model and Nile fills in the command.</p><p data-l="zh">有 Codex 或 Claude Code 直接用；没有就选 Gemini、DeepSeek 或本地模型，Nile 帮你填好命令。</p></div>
+    <div class="card"><div class="n">2</div><h3 data-l="en">Connect your products</h3><h3 data-l="zh">连接你的商品</h3><p data-l="en">Shopify, Amazon, WooCommerce, Magento, BigCommerce, or a CSV. Your agent checks the connection and pulls the catalog.</p><p data-l="zh">Shopify、Amazon、WooCommerce、Magento、BigCommerce 或一个 CSV。agent 检查连接并拉取目录。</p></div>
+    <div class="card"><div class="n">3</div><h3 data-l="en">Set your CAC cap</h3><h3 data-l="zh">设定 CAC 上限</h3><p data-l="en">The most you will pay to win a first-time customer, per product. One rule for the whole catalog, exceptions where you want them.</p><p data-l="zh">为每个商品设"赢得一位新客最多愿意花多少"。一条规则覆盖全目录，个别商品可单独设。</p></div>
+  </div>
+</section>
+
+<section>
+  <h2 data-l="en">How Nile charges</h2><h2 data-l="zh">Nile 怎么收费</h2>
+  <div class="fee">
+    <div><b>Nile Direct</b></div><div class="v" data-l="en">You set the CAC cap; Nile runs the auction and only spends within it.</div><div class="v" data-l="zh">你设 CAC 上限，Nile 在站内竞价，只在上限内花钱。</div>
+    <div><b data-l="en">AI sales matched by Nile</b><b data-l="zh">Nile 匹配带来的 AI 销售</b></div><div class="v" data-l="en">3% of the sale. No third-party resellers; last click.</div><div class="v" data-l="zh">成交额的 3%。不含第三方 reseller，按 last click。</div>
+    <div><b data-l="en">Third-party ads and services matched by Nile</b><b data-l="zh">Nile 匹配支持的第三方广告/服务</b></div><div class="v" data-l="en">3% of that budget.</div><div class="v" data-l="zh">该预算的 3%。</div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2 data-l="en">Before you install</h2><h2 data-l="zh">安装前</h2>
+  <div class="card"><h3 data-l="en">What do I need?</h3><h3 data-l="zh">需要什么？</h3><p data-l="en">A Mac with Apple Silicon and an AI agent account: ChatGPT (for Codex), Anthropic (for Claude Code), Google (Gemini) or a DeepSeek key. No agent yet? Download the full installer below; it sets one up for you.</p><p data-l="zh">一台 Apple Silicon 的 Mac，和一个 AI agent 账号：ChatGPT（用 Codex）、Anthropic（用 Claude Code）、Google（Gemini）或 DeepSeek key。还没有 agent？用下面的完整安装器，它会帮你装好。</p></div>
+  <div class="card"><h3 data-l="en">macOS says the app cannot be checked</h3><h3 data-l="zh">macOS 提示无法验证开发者</h3><p data-l="en">This test build is not yet notarized. Right-click Nile.app and choose Open once; the one-line installer does this for you.</p><p data-l="zh">这是测试版，还没公证。右键 Nile.app 选"打开"一次即可；一行安装命令会自动处理。</p></div>
+  <div class="card"><h3 data-l="en">Where does my data live?</h3><h3 data-l="zh">我的数据在哪？</h3><p data-l="en">Nile keeps your brand's Memory on your Mac. Your agent reads and writes it; the app itself never changes it without you. Card details are entered on the billing page in your browser, never in the app.</p><p data-l="zh">品牌的 Memory 存在你的 Mac 上，由你的 agent 读写，app 本身不会背着你改。银行卡在浏览器的账单页输入，不会进 app。</p></div>
+  <p style="color:var(--muted);font-size:14px"><span data-l="en">No agent on this Mac yet? </span><span data-l="zh">这台 Mac 还没有任何 AI？</span><a href="https://github.com/Haozhuang479/get-nile/releases/latest/download/install-full.command" data-l="en">Download the full installer</a><a href="https://github.com/Haozhuang479/get-nile/releases/latest/download/install-full.command" data-l="zh">下载完整安装器</a><span data-l="en"> (adds Codex, Claude Code, Gemini CLI or DeepSeek, then Nile).</span><span data-l="zh">（先装 Codex / Claude Code / Gemini CLI / DeepSeek，再装 Nile）。</span></p>
+</section>
+
+<footer><span>© FIFTEEN AI, Inc.</span><span><a href="https://github.com/Haozhuang479/get-nile/releases" data-l="en">All releases</a><a href="https://github.com/Haozhuang479/get-nile/releases" data-l="zh">所有版本</a> · <a href="mailto:tony@nile.app">tony@nile.app</a></span></footer>
+</div>
+<script>
+(function(){
+  var h=document.documentElement, saved=null; try{saved=localStorage.getItem('nile-lang')}catch(e){}
+  var lang=saved||(navigator.language||'').toLowerCase().startsWith('zh')?'zh':'en'; if(saved) lang=saved;
+  function setLang(l){h.lang=l;document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.set===l)});try{localStorage.setItem('nile-lang',l)}catch(e){}}
+  setLang(lang); document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){setLang(b.dataset.set)}});
+  function copy(){var t=document.getElementById('one').textContent;navigator.clipboard&&navigator.clipboard.writeText(t);var b=h.lang==='zh'?document.getElementById('copy2'):document.getElementById('copy');var o=b.textContent;b.textContent=h.lang==='zh'?'已复制':'Copied';setTimeout(function(){b.textContent=o},1400)}
+  document.getElementById('copy').onclick=copy;document.getElementById('copy2').onclick=copy;
+  requestAnimationFrame(function(){requestAnimationFrame(function(){document.querySelectorAll('.ring .seg').forEach(function(s){s.style.strokeDashoffset='0'});var t0=performance.now(),el=document.getElementById('pct');(function tick(n){var k=Math.min(1,(n-t0)/1100),e=1-Math.pow(1-k,3);el.textContent=Math.round(25*e)+'%';if(k<1)requestAnimationFrame(tick)})(t0)})});
+})();
+</script>
+</body>
+</html>
